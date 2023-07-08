@@ -16,13 +16,11 @@ public class AntJavaApplication {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        double precio = 20;
-        double precioConIVA1 = precioConIVA(precio);
-        System.out.println("precio: "+precio);
-        System.out.println("precioConIVA: "+precioConIVA1);
-        
-    }
-        static double precioConIVA(double precio) {
-        return precio*1.21;
+        String[] nombres = {"alex", "pedro", "matias", "gabriela"};
+        String result = "";
+        for(String nombre: nombres) {
+            result+=nombre+"\n";
+        }
+        System.out.println(result);
     }
 }
